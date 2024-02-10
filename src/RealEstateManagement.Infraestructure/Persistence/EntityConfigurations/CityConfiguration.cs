@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using RealEstateManagement.Domain.Entities;
 
-namespace RealEstateManagement.Infrastructure.Persistence.EntityConfgurations;
+namespace RealEstateManagement.Infrastructure.Persistence.EntityConfigurations;
 
 public class CityConfiguration : IEntityTypeConfiguration<City>
 {
