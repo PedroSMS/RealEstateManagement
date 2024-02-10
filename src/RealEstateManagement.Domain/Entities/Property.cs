@@ -16,7 +16,6 @@ public class Property : BaseEntity<Guid>
     public string Name { get; set; }
     public string Description { get; set; }
     public string EnergyCertificate { get; set; }
-    public float? UsableArea { get; set; }
     public float? GrossArea { get; set; }
     public float? AreaOfLand { get; set; }
     public decimal PriceEur { get; set; }
@@ -27,5 +26,5 @@ public class Property : BaseEntity<Guid>
     public ECondition ConditionId { get; set; }
 
     public HashSet<Photo> Photos { get; set; }
-    public HashSet<HouseArea> Areas { get; set; }
+    public HashSet<PropertyHouseArea> Areas { get; set; }
 }

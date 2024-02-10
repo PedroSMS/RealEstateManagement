@@ -14,5 +14,5 @@ public class HouseArea : BaseEntity<Guid>
 
     public string Name { get; set; }
 
-    public HashSet<Property> Properties { get; set; }
+    public HashSet<PropertyHouseArea> Properties { get; set; }
 }

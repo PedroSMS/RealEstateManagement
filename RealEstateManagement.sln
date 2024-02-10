@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstateManagement.Domain", "src\RealEstateManagement.Domain\RealEstateManagement.Domain.csproj", "{8BBD6A01-9B07-459F-AECC-CACA7FAAE1FC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstateManagement.Application", "src\RealEstateManagement.Application\RealEstateManagement.Application.csproj", "{3866CC84-DC1D-4507-B200-8D3B5B8F1395}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstateManagement.Infraestructure", "src\RealEstateManagement.Infraestructure\RealEstateManagement.Infraestructure.csproj", "{7CA0EC61-31C9-4B38-B39F-6AEC2E1E681D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstateManagement.Infrastructure", "src\RealEstateManagement.Infraestructure\RealEstateManagement.Infrastructure.csproj", "{7CA0EC61-31C9-4B38-B39F-6AEC2E1E681D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstateManagement.API", "src\RealEstateManagement.API\RealEstateManagement.API.csproj", "{626607E3-2EC2-4EFB-A048-A0113D24DEA0}"
 EndProject

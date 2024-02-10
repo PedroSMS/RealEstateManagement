@@ -7,7 +7,7 @@ services:
       - '1433:1433'
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=SayWhat$$123!!
+      - SA_PASSWORD=SayWhat$123!!
     volumes:
       - ./db/data:/var/opt/mssql/data
       - ./db/log:/var/opt/mssql/log
