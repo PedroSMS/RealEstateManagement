@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using RealEstateManagement.API;
+using RealEstateManagement.Application;
 using RealEstateManagement.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services
     .ConfigureIdentity()
+    .AddApplication()
     .AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
