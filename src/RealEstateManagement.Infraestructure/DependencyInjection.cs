@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RealEstateManagement.Application.Common.Interfaces;
 using RealEstateManagement.Infrastructure.Persistence.Contexts;
+using RealEstateManagement.Infrastructure.Service;
 using System;
 
 namespace RealEstateManagement.Infrastructure;
@@ -37,6 +38,8 @@ public static class DependencyInjection
 
         services.AddScoped<IRealEstateDbContext>(provider => 
             provider.GetRequiredService<RealEstateDbContext>());
+
+        services.AddScoped<IUserService, UserService>();
 
         return services;
     }

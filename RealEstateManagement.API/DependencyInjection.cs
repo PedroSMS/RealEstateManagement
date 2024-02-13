@@ -7,7 +7,16 @@ public static class DependencyInjection
 {
     public static IServiceCollection ConfigureIdentity(this IServiceCollection services)
     {
-        services.AddIdentity<IdentityUser, IdentityRole>()
+        services
+            .AddIdentity<IdentityUser, IdentityRole>(e =>
+            {
+                e.Password = new()
+                {
+                    RequireNonAlphanumeric = true,
+                    RequireLowercase = true,
+                    RequireUppercase = true,
+                };
+            })
             .AddEntityFrameworkStores<AuthDbContext>()
             .AddDefaultTokenProviders()
             .AddApiEndpoints();
